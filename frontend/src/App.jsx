@@ -4,7 +4,7 @@ function App() {
   const [text, setText]=useState('')
 
   const handleSend =()=>{
-    fetch('http://localhost:5000/register')
+    fetch('https://chatting-app-backend-eight.vercel.app/register')
     .then((response)=>{return response.json()})
     .then((data)=>{console.log(data.message)})
   }
